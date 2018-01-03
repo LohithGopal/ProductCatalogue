@@ -1,0 +1,32 @@
+<div class="container-fluid" onreset="doReset()">
+<br>
+<h4> Product Details</h4>
+<div class="row">
+    <div class="col-lg-4">
+      <br>
+      <br>
+        <img src="../../assets/dist/img/{{product.productCategory}}.jpg" class="rounded" width="250" height="250">
+      <br>  
+    </div>
+    <div class="col-lg-8">
+      <h5>{{product.productName}}</h5>
+      <h6>{{product.productDesc}}</h6>
+      <h6>{{product.productCategory}}</h6>
+      <h6>{{product.price}} Rupees</h6>
+      <br>
+      <h5>Technical Details:</h5>
+      <h6>Material: {{product.material}}</h6>
+      <h6>Color: {{product.color}}</h6>
+      <br>
+      <label for="quantity"><h6>Quantity</h6></label>
+      <input type="text" name="quantity" [(ngModel)]="quantity">
+      <br>
+      <button type="button" class="btn btn-outline-primary"
+      (click)="addToCart(product, quantity)">Add to Cart</button>
+    </div>
+</div>
+<div class="row">
+
+</div>
+
+</div>

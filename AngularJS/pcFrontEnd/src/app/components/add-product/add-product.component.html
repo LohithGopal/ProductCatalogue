@@ -1,0 +1,32 @@
+<div class="container">
+
+      <form #addProductForm="ngForm">
+        <br>
+        <div class="form group">
+            <label for="productId">Product Id</label>
+          <input type="text" name="productId" class="form-control" [(ngModel)]="product.productId" >
+        </div>
+        <div class="form group">
+          <label for="productName">Product Name</label>
+            <input type="text" name="productName" class="form-control" [(ngModel)]="product.productName" >
+        </div>
+        <div class="form group">
+            <label for="text">Product Description</label>
+          <input type="text" name="productDesc" class="form-control" [(ngModel)]="product.productDesc" >
+        </div>
+        <div class="form group">
+            <label for="productCategory">Product Category</label>
+          <input type="text" name="productCategory" class="form-control" [(ngModel)]="product.productCategory" >
+        </div>
+        <div class="form group">
+            <label for="price">Price</label>
+          <input type="datetime" name="price" class="form-control" [(ngModel)]="product.price" >
+        </div>
+        <br>
+        <button class="btn btn-outline-primary" (click)="updateProduct(product); addProductForm.resetForm()">New</button>
+        <button class="btn btn-outline-primary" (click)="updateProduct(product); addProductForm.resetForm()">Update</button>
+        <button class="btn btn-outline-primary" (click)="deleteProduct(product); addProductForm.resetForm()">Delete</button>
+        <button class="btn btn-outline-primary" (click)="addProductForm.resetForm()">Reset</button>
+      </form>
+    <br>
+</div>
