@@ -2,18 +2,18 @@
 ProductCatalogue
 
 
-Tools Used for the Development Activity:
-STS IDE 
-Visual Studio Code 
+# Tools Used for the Development Activity:
+STS IDE - Spring Boot Restful webservices with JpaRepository for Oracle DB 
+Visual Studio Code - AngularJS 4
 Oracle DB with configurations mentioned in application.properties
 
-Steps to Set up the code:
+# Steps to Set up the Project:
 1. Export the code from the Google Drive Link <>
 2. Import the project on to STS or any IDE
 3. Make sure the npm and Angular CLI are installed on the Dev machine if not below are the high level steps:
 	a. Install node.js and npm
 	b. on the commandprompt: npm install -g @angular@cli
-4. To start the Angular Application 
+4. To start the Angular Application
 	a. go to cd <>/PrjProductCatalogue/AngularJS/pcFrontEnd
 	b. npm start
 5. Similarly for the Application server to launch rest services run the Spring Boot app from STS or any IDE.
